@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         * {
+            margin: 0;
+            padding: 0;
+         }
+
+         p {
+            font-weight: bold;
+         }
+
+         /* 1024px ~ */
+         @media all and (min-width: 1024px) {
+            img {
+               width: 1200px;
+            }
+
+            h1 {
+               font-size: 150px;
+               color: green;
+            }
+         }
+
+         /* 768px ~ 1023px */
+         @media all and (min-width: 768px) and (max-width: 1023px) {
+            img {
+               width: 800px;
+            }
+
+            h1 {
+               font-size: 50px;
+               color: skyblue;
+            }
+         }
+
+         /* 0px ~ 767px */
+         @media all and (max-width: 767px) {
+            img {
+               width: 100%;
+            }
+         }
+      </style>
+   </head>
+   <body>
+      <h1>Lime</h1>
+      <img src="../images/lime.jpg" alt="라임" />
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum rem fugiat mollitia cum cupiditate minima maiores ad omnis optio? Molestiae cupiditate maxime consectetur nisi nulla cumque ut et deserunt facere?</p>
+   </body>
+</html>

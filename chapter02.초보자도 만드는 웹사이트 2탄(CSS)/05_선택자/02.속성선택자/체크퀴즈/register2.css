@@ -1,0 +1,76 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background: #ccc;
+   padding: 20px;
+}
+
+#signup {
+   background: #fff;
+   border: 1px solid #222;
+   border-radius: 5px;
+   padding: 20px;
+   width: 400px;
+   margin: 30px auto;
+}
+
+#signup > fieldset {
+   border: 1px solid #ccc;
+   margin-bottom: 30px;
+}
+
+#signup legend {
+   font-size: 16px;
+   font-weight: bold;
+   padding-left: 5px;
+   padding-bottom: 10px;
+}
+
+/* 그룹선택자를 사용할 때, 자손선택자를 지정해주지 않으면 body 안에 있는 요소를 선택하는 것으로 인식하므로 각각 자손선택자를 지정해줘야 한다 */
+#signup input[type='text'],
+#signup input[type='password'],
+#signup input[type='tel'],
+#signup input[type='email'] {
+   border: 1px solid #ccc;
+   border-radius: 3px;
+   font-size: 13px;
+   padding: 5px;
+   width: 200px;
+}
+
+ul li {
+   list-style: none;
+   padding: 5px 10px;
+   margin-bottom: 2px;
+   line-height: 30px;
+}
+
+#signup input[required] {
+   border: 1px solid red;
+}
+
+#signup input[readonly] {
+   border: none;
+}
+
+#signup button {
+   border: 1px solid #222;
+   border-radius: 20px;
+   font-size: 16px;
+   padding: 7px 25px;
+   margin: 0 auto;
+   /* 인라인 태그는 가운데정렬을 위해서 display를 올바르게  바꿔줘야 한다. */
+   display: block;
+   letter-spacing: 1px;
+}
+
+#signup label {
+   font-size: 13px;
+   width: 110px;
+   float: left;
+   /* 인라인 태그는 width를 사용하기 위해서 display 변경 */
+   /* display: inline-block; */
+}

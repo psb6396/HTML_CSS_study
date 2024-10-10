@@ -1,0 +1,33 @@
+#container {
+   /* border: 1px solid black; */
+
+   width: 600px;
+   margin: 0 auto;
+}
+table {
+   border: 1px solid gray;
+   border-collapse: collapse;
+}
+
+th,
+td {
+   border: 1px solid gray;
+   padding: 10px 20px;
+}
+
+#description,
+#receipe,
+#package {
+   border: 1px dotted black;
+   margin-bottom: 30px;
+   padding: 30px;
+}
+
+#description {
+   border-top-right-radius: 30px;
+   border-top-left-radius: 30px;
+}
+
+#package {
+   border
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         /* 사용자 pc에 없는 폰트를 폰트파일을 이용해 웹사이트에 적용하는 방법 */
+
+         /* 1. ostrich폰트를ㄹ 가지고 와야한다. @font-face를 이용 */
+         @font-face {
+            /* 가져온 폰트를 font-family에 지정한 이름으로 사용 */
+            font-family: 'Ostrich';
+
+            /* src: 폰트파일을 가져온다 */
+            /* 브라우저의 호환성을 지원하기 위해서 여러개의 확장자 파일을 가져온다 */
+            src: url('../fonts/ostrich-sans-bold.eot'), url('../fonts/ostrich-sans-bold.svg') format('svg'), url('../fonts/ostrich-sans-bold.woff') format('woff');
+         }
+
+         /* 2. ostrich 폰트를 사용 */
+         .wfont {
+            /* sans-serif: 폰트의 가장 마지막에 항상 붙인다(다국어 지원) */
+            font-family: 'Ostrich';
+         }
+      </style>
+   </head>
+   <body>
+      <p>Using Default Fonts</p>
+      <p class="wfont">Using Web Fonts</p>
+   </body>
+</html>

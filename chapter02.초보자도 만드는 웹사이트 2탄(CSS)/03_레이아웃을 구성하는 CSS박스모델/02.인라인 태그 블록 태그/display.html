@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         body * {
+            border: 1px solid blue;
+         }
+         /* 블록태그 */
+         h1,
+         div,
+         p {
+            /* block 태그를 inline 태그 처럼 사용할 수 있다 */
+            display: inline;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+         }
+         /* 인라인 태그 */
+         a,
+         span {
+            /* 블록 태그로 변경: height, width, margin 전부 사용 가능 */
+            display: block;
+
+            /* height, width, margin 전부 사용 가능하면서 한 라인에 정렬 */
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+         }
+         ul {
+            list-style: none;
+         }
+         li {
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            margin: 0 20px;
+         }
+      </style>
+   </head>
+   <body>
+      <h1>시간이란</h1>
+      <div>내일 죽을 것처럼 오늘 을 살고</div>
+      <p>영원히 살 것처럼 내일을 꿈꾸어라</p>
+
+      <hr />
+
+      <ul>
+         <li>menu1</li>
+         <li>menu2</li>
+         <li>menu3</li>
+         <li>menu4</li>
+      </ul>
+   </body>
+</html>
